@@ -17,11 +17,6 @@
             margin: 20px 0;
         }
 
-        /* p {
-            /* margin: 0 16px !important;
-            font-size: 18px !important; */
-        /* } */
-
         article {
             width: 21cm;
             min-height: 29.7cm;
@@ -43,11 +38,8 @@
             color: #666;
         }
 
-        /*p,h3{color: #666;}*/
-
         a {
             text-decoration: none;
-            /*color: #666;*/
             color: #238c52;
             padding: 0 2px;
             margin: 0 4px;
@@ -91,7 +83,7 @@
         }
 
         .bio>p {
-            margin: .8em 1em;
+            margin: .6em 1em;
         }
 
         .bio>p>a {
@@ -173,21 +165,12 @@
             <h1>王紫禧</h1>
             <img src="image.638a031f.jpg" alt="" width="100" height="133" class="cv-img">
             <p>
-                女&nbsp;|&nbsp;22岁&nbsp;|&nbsp; web 前端&nbsp;|&nbsp;珠海
+                女&nbsp;|&nbsp;22岁&nbsp;|&nbsp; web 前端&nbsp;|&nbsp;广州
             </p>
             <p>
                 手机（同微信）：<a href="tel:13421590677">13421590677</a>&nbsp;|&nbsp;邮箱：<a href="mailto:1935158902@qq.com">1935158902@qq.com</a>
             </p>
             <p style="margin-left: 1em">专业课程：数据结构与算法、计算机网络、操作系统、Java程序设计、数据库概论、编译原理、软件工程、计算机组成原理等。</p>
-        </section>
-
-        <section class="education">
-            <h2 style="margin:0 0 16px 0">教育经历</h2>
-            <p style="margin: 0 1em">
-                珠海科技学院 &nbsp; 软件工程 &nbsp; 本科 &nbsp;
-                <span><time>2019.9</time>~<time>2023.6</time></span>
-            </p>
-
         </section>
 
         <style>.skill>ul>li {
@@ -200,11 +183,12 @@
             <!--        <div id="skillMap" style="width: 350px;height:300px;"></div>-->
             <ul class="skill">
                 <li>精通静态页面制作技巧，能够使用 <strong> HTML、CSS、JavaScript </strong>将设计稿还原成页面;</li>
-                <li>精通 <strong>ES6</strong> 语法规范，包括 <strong>Promise / async / await / 析构赋值</strong>等；</li>
+                <li>精通 <strong>ES6</strong> 语法规范，包括 <strong>Promise / async / await / 解构赋值</strong>等；</li>
                 <li>精通 Vue 开发框架，包括 <strong>VueCli、VueRouter、Vuex</strong>等；</li>
                 <li>精通前后端分离技术，包括<strong>Axios、Ajax、Promise、跨域、前端路由、Cookie、Session</strong> 等；</li>
                 <li>掌握 <strong>React</strong> 开发框架；熟练解决简单的算法问题；</li>
                 <li>掌握 <strong>TypeScript</strong> 的使用，我的项目 布朗奇记账 就是基于 TypeScript 实现的；</li>
+                <li>掌握 <strong>css modules、SCSS、styled-components</strong> 等 CSS 模块化解决方案；</li>
                 <li>掌握 <strong>Webpack</strong> 的配置和优化；</li>
                 <li>掌握 <strong>Java、MySQL</strong> 的基本语句，能基于数据库开发 JavaWeb 应用；</li>
                 <!-- <li>有一定的 node.js 使用经验；</li> -->
@@ -268,7 +252,7 @@
                         3、本框架除了考虑自身再PC端和移动端的样式逻辑之外，还提供了 <strong>响应式的网格系统</strong>；
                     </p>
                     <p>
-                        4、本项目使用 <strong>SCSS</strong> 编写默认样式，使用 <strong>npm</strong> 发布组件、<strong>Vuepress</strong>
+                        4、本项目使用 <strong>SCSS</strong> 编写默认样式，使用 <strong>NPM</strong> 发布组件、<strong>Vuepress</strong>
                         编写官网。
                     </p>
                     <span class="code">
@@ -301,7 +285,7 @@
 
                 <li>
                     <header>
-                        <h3>CC-Music &nbsp;-&nbsp; 一个基于SpringBoot+vue的音乐网站</h3>
+                        <h3>CC-Music &nbsp;-&nbsp; 一个基于SpringBoot+Vue.js的音乐网站</h3>
                         <span>
                             <a href="https://github.com/isCCcc/CC-Music">源码链接</a>
                         </span>
@@ -311,10 +295,11 @@
                     <p>
                         这是一个基于 <strong>Vue</strong> 和 <strong>SpringBoot</strong> 的<strong>全栈</strong>项目。
                     </p>
-                    <p>功能包括：登录注册、播放歌曲、收藏歌曲、取消收藏歌曲、编辑个人信息、按歌手信息排序歌曲等，能根据用户的操作实时刷新网页、更新数据库数据。</p>
                     <p>
-                        该项目使我对服务器端的<strong>跨域</strong>和<strong>请求</strong>有更深一步的了解。
+                        该项目使用 Vue.js 搭建前端框架，SpringBoot 编写后台接口，并使用 MySQL 实现永久性存储。
                     </p>
+                    <p>功能包括：登录注册、播放歌曲、收藏歌曲、取消收藏歌曲、编辑个人信息、按歌手信息排序歌曲等，能根据用户的操作实时刷新网页、更新数据库数据。</p>
+
                     <span class="code">
                         <p>首页展示</p>
                         <img src="music.1c4388a3.png" style="width: 380px">
@@ -330,15 +315,30 @@
                             <a href="https://github.com/isCCcc/dom_jquery">源码链接</a>
                         </span>
                     </header>
-                    <p>该项目总结了 jQuery 常用操作 API，封装了一个有关于 jQuery</p>
+                    <p>该项目是我复习 jQuery 时，封装的有关于 jQuery 常使用的 API。在此之前，曾封装过一个操作 DOM 的 API 仓库，并附有详细说明文档，详情可点击右上角源码预览查看设计文档。
+                    </p>
                 </li>
             </ul> -->
         </section>
-        <style>.other>ul>li {
-                margin: 4px 0;
+        <section class="education">
+            <h2 style="margin:0 0 8px 0">教育经历</h2>
+            <p style="margin: 0 1em">
+                珠海科技学院 &nbsp; 软件工程 &nbsp; 本科 &nbsp; 5%~20% &nbsp;
+                <span><time>2019.9</time>~<time>2023.6</time></span>
+            </p>
+        </section>
+
+        <style>.other {
+                margin: 8px 0;
             }
 
-            .other>h2 {}
+            .other>ul {
+                margin: 0.5em;
+            }
+
+            .other>ul>li {
+                margin: 4px 0;
+            }
 
             .other>ul>li>a {
                 border-bottom: none;
@@ -346,9 +346,8 @@
         <section class="other">
             <h2>其他技能和链接</h2>
             <ul>
-                <li>2020-2021 学年三等奖学金</li>
-                <li>2021-2022 学年三等奖学金</li>
-                <li>通过 CET-4、CET-6 考试；</li>
+                <li>通过 CET-6 等级测试；</li>
+                <li>2020-2022 学年连续两年荣获三等奖学金</li>
                 <li>我的<a href="https://github.com/isCCcc">github</a> ，过去三个月内有近 200 次提交记录。</li>
             </ul>
         </section>
